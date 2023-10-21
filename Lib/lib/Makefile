@@ -1,6 +1,6 @@
 .PHONY : libtest_dynamic_calc.so.1.0.1
 libtest_dynamic_calc.so.1.0.1 : add.o sub.o mul.o div.o
-	gcc --shared -Wl,-soname,libtest_dynamic_calc.so.2 -o libtest_dynamic_calc.so.1.0.1 add.o sub.o mul.o div.o
+	gcc --shared -Wl,-soname,libtest_dynamic_calc.so.1 -o libtest_dynamic_calc.so.1.0.1 add.o sub.o mul.o div.o
 add.o : add.c
 	gcc -c add.c
 sub.o : sub.c
